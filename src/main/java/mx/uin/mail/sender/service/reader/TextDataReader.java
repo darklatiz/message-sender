@@ -20,6 +20,8 @@ public class TextDataReader implements DataReader {
 
     List<String> dataEmailsLines = convertoToLines(dataEmails);
     List<String> machoteLines = convertoToLines(machote);
+    machoteLines.stream()
+      .forEach(System.out::println);
 
     //Crear los obejetos MessageData en base a las lineas extraidas de los archivos
 
